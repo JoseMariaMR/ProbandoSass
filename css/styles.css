@@ -1,0 +1,57 @@
+body {
+  background-color: lightblue;
+}
+
+.container {
+  width: 200px;
+  border: 2px solid red;
+  margin: 30% auto;
+}
+.container .box {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  border: 1px solid black;
+  animation-name: test;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.container .box .box-1 {
+  background: pink;
+  min-width: 200px;
+  min-height: 200px;
+}
+.container .box .box-2 {
+  background: yellow;
+  min-width: 200px;
+  min-height: 200px;
+}
+.container .box .box-3 {
+  background: gray;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+@keyframes test {
+  0% {
+    right: 0;
+  }
+  20% {
+    right: 0;
+  }
+  40% {
+    right: 200px;
+  }
+  60% {
+    right: 200px;
+  }
+  80% {
+    right: 400px;
+  }
+  100% {
+    right: 400px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
