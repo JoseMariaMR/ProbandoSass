@@ -6,12 +6,13 @@ body {
   width: 200px;
   border: 2px solid red;
   margin: 30% auto;
+  overflow: hidden;
 }
 .container .box {
   display: flex;
   position: relative;
-  padding: 20px;
-  border: 1px solid black;
+  width: 600px;
+  height: 200px;
   animation-name: test;
   animation-duration: 5s;
   animation-direction: alternate;
@@ -19,18 +20,18 @@ body {
 }
 .container .box .box-1 {
   background: pink;
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 .container .box .box-2 {
   background: yellow;
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 .container .box .box-3 {
   background: gray;
-  min-width: 200px;
-  min-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 @keyframes test {
